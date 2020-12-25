@@ -4,8 +4,7 @@
 
 @section('sidebar')
     @parent
-
-    <p>This is appended to the master sidebar.{{ $test ?? 'teste'}}</p>
+    <h2>sidebar</h2>
 @endsection
 
 @section('content')
