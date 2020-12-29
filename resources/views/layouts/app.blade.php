@@ -45,9 +45,9 @@
                     </li>
                 </ul>
             </header>
+            
             <main>
-                main
-                lorem*60
+                @yield('content')
             </main>
             <footer>
                 footer
