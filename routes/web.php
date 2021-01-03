@@ -26,4 +26,5 @@ Route::get('/', function () {
 // Route::resource('students', 'web\StudentController');
 // Route::get('students', 'Web\StudentController@index');
 Route::get('/students', [StudentController::class, 'index']);
+Route::get('/students/test', [StudentController::class, 'test']);
 Route::get('/test', [TestController::class, 'index']);
