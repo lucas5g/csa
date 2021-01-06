@@ -36,8 +36,6 @@ class StudentController extends Controller
 
         // return file_get_contents(env('GOOGLE_SERVICE_ACCOUNT_JSON_LOCATION'));
 
-        $spreadsheetId = '1lUyWWN0MH5kNdEYf_BEK-Nzxzkc_4tzY';
-
         $spreadsheetId = '1o9wB8zt9O_zX3kBuYyn8QpE-yIiErr0b4baBAVLU3W8';
 
         $range = 'enturmacao!A2:M';
@@ -46,7 +44,7 @@ class StudentController extends Controller
         $values = $response->getValues();
 
         foreach ($values as $row) {
-            if ($row[10] == '23' && $row[11] == '3') {
+            if ($row[10] == '23' && $row[11] == '3' && $row[0] == 'C005805') {
 
                 $students[] = [
                     'matricula' => $row[0],

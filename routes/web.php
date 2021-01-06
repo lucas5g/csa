@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Web\StudentController;
 use App\Http\Controllers\TestController;
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
 // Route::prefix('web')->group(function(){
 //     Route::resource('students', 'StudentController');
